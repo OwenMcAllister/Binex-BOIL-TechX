@@ -10,6 +10,7 @@ void setup() {
 
 void vuln() {
     char buffer[128];
+    printf("Here is a pointer to your buffer: %p\n", buffer);
     printf("Enter your input: ");
     read(0, buffer, 256);
 }
